@@ -115,7 +115,9 @@ body {
     margin-bottom: 20px;
 }
 
-.introducao .conteudo-box {
+/* resolver amanha */
+
+/* .introducao .conteudo-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,9 +128,9 @@ body {
     color: var(--text-color-light);
     background: var(--background-color-light);
     margin: 0 auto;
-}
+} */
 
-.conteudo-box {
+/* .conteudo-box {
     height: auto;
     width: 90%;
     max-width: 800px;
@@ -139,6 +141,20 @@ body {
     color: var(--text-color);
     background: var(--background-color-light);
     border-radius: 10px;
+} */
+
+/*   final para resolver amanha   */
+
+.icons-ameacas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20rem;
+    width: 20rem;
+    color: var(--text-color-light);
+    font-family: var(--font-family);
+    margin-top: 20px;
 }
 
 .informacoes {
