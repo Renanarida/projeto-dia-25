@@ -183,11 +183,43 @@ body {
 
 .footer {
     width: 100%;
-    height: 100px;
-    position: fixed;
+    height: 150px;
+    display: flex;
+    position: relative;
     bottom: 0px;
     z-index: 1000;
     background: var(--background-color);
     color: var(--text-color);
+}
+
+.footer-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-family);
+    /* font-size: 18px; */
+    color: var(--text-color-light);
+}
+.social a {
+    color: var(--text-color-light);
+    border: 2px solid var(--text-color-light);
+    font-size: 2.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    text-decoration: none;
+    padding: 10px;
+    margin: auto;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    font-family: "poppins", sans-serif;
+}
+
+.copyright {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
 }
