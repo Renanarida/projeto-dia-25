@@ -20,10 +20,11 @@
 
 section {
     width: 100%;
-    /* height: 100vh; */
+    height: 100%;
 }
 
 body {
+    padding-top: 70px;
     background-image: url('img/sl_031420_28950_08.jpg');
     background-color: var(--background-color-light); /* cor de fundo de fallback */
     background-repeat: no-repeat;
@@ -34,47 +35,47 @@ body {
     -webkit-font-smoothing: antialiased; /* para suavizar em navegadores WebKit */
 }
 
-.header {
-    width: 100%;
-    height: 100px;
+header {
     position: fixed;
-    top: 0px;
-    z-index: 1000;
-    background: var(--background-color);
-    color: var(--text-color);
-} 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 45px 20px;
+    z-index: 1000; 
+}
+  
+/* .animacao-ciberseguranca {
+    max-width: 100%;
+    max-height: 100px;
+    height: auto;
+    display: block;
+} */
 
 .navbar {
     display: flex;
-    text-align: center;
-    justify-content: end;
-    align-items: end;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    /* border-radius: 5px; */
-    transition: background-color 0.3s ease;
-}  
-
-.navbar a {
-    color: var(--text-color);
-    font-size: 20px;
+    justify-content: flex-start; 
+    flex-direction: row-reverse;
+  }
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
     text-decoration: none;
-    padding: 10px;
-    margin: auto;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    background-color: transparent;
-    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+.nav-links li a:hover {
+    color: var(--text-color-light); 
 }
-
-.navbar a:hover {
-    background-color: transparent; /* remove o fundo */
-    color: var(--secondary-color); /* ou use a sua variável: var(--verde) se tiver */
-    text-decoration: none;
-    border: none;
-}
-
+  
 /* .introducao .imagem-fundo {
     width: 100%;
     height: 100vh;
@@ -111,18 +112,25 @@ body {
     background-color: rgba(0, 0, 0, 0.7); 
     color: #fff;
     /* position: relative; */
-    font-size: 20px;
-    /* padding: 20px; */
+    font-size: 25px;
+    padding: 25px;
     border-radius: 12px;
-    height: 500px;
-    max-width: 800px;
+    height: 600px;
+    max-width: 1000px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     transition: transform 0.3s ease;
 }
 
 .conteudo-seguranca:hover {
     transform: scale(1.03);
+}
+
+.conteudo-exemplos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .titulo {
@@ -322,6 +330,39 @@ body {
 }
 
 .footer {
+    background-color: #0a0a0a;
+    color: #dcdcdc;
+    padding: 25px 15px;
+    font-size: 0.95rem;
+    border-top: 1px solid #222;
+  }
+  
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .social-icons a {
+    color: #dcdcdc;
+    margin-left: 15px;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #00bfff; 
+  }
+  
+
+/* .footer {
     width: 100%;
     height: 150px;
     display: flex;
@@ -340,7 +381,7 @@ body {
     height: 100%;
     font-family: var(--font-family);
     /* font-size: 18px; */
-    color: var(--text-color-light);
+    /* color: var(--text-color-light);
 }
 .social a {
     color: var(--text-color-light);
@@ -362,4 +403,4 @@ body {
     text-align: center;
     font-size: 16px;
     color: white;
-}
+}  */
