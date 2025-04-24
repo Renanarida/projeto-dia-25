@@ -12,7 +12,7 @@
     --primary-color: #3498db;
     --secondary-color: #00b5fd;
     --background-color: #04571d;
-    --background-color-light: #27332c;
+    --background-color-light: #223127;
     --text-color: #ffffff;
     --text-color-light: rgb(1, 131, 252);
     --font-family: 'Arial, sans-serif';
@@ -279,9 +279,10 @@ header {
 }
 
 .informacoes h1 {
-    font-size: 50px;
-    color: var(--text-color-light);
-    font-family: var(--font-family);
+    font-size: 60px;
+    padding: 30px 0px;
+    color: var(--text-color);
+    /* font-family: var(--font-family); */
     text-align: center;
     margin-top: 20px;
 }
@@ -298,6 +299,11 @@ header {
     background: var(--background-color-light);
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+#conclusao-box {
+    padding: 30px 20px;
+    margin-bottom: 30px;
 }
 
 .conteudo p, .areas-box p {
