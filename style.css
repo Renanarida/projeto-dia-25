@@ -462,14 +462,14 @@ header {
   .social-icons {
     display: flex;
     flex-direction: row;
-    margin-top: 10px; /* espaçamento opcional entre o texto e os ícones */
+    margin-top: 10px; 
   }
 
   .social-icons a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #dcdcdc;
+    color: var(--text-color-light);
     margin-left: 15px;
     font-size: 25px;
     text-decoration: none;
@@ -478,6 +478,12 @@ header {
     width: 45px;
     border-radius: 50%;
     transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background: var(--text-color-light);
+    color: #fff;
+    transform: scale(1.06);
   }
   
   .social-icons a:hover {
