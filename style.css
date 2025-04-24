@@ -12,7 +12,7 @@
     --primary-color: #3498db;
     --secondary-color: #00b5fd;
     --background-color: #04571d;
-    --background-color-light: #3a4d5f;
+    --background-color-light: #27332c;
     --text-color: #ffffff;
     --text-color-light: rgb(1, 131, 252);
     --font-family: 'Arial, sans-serif';
@@ -163,6 +163,24 @@ header {
     margin-bottom: 20px;
 }
 
+.titulo-h1 {
+    font-size: 50px;
+    padding-top: 35px;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    text-align: center;
+    margin-top: auto;
+}
+
+.titulo-sub {
+    font-size: 30px;
+    padding-top: 25px;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    text-align: center;
+    margin-top: auto;
+}
+
 .conteudo-ameacas {
     background-size: cover;
     background-position: center;
@@ -306,7 +324,7 @@ header {
   /* Boxes */
   .areas-box, .conteudo {
     background-image:
-      linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 10)), /* camada escura transparente */
+      linear-gradient(rgba(0, 0, 0, 0), rgba(01, 0, 0, 10)), /* camada escura transparente */
       url('img/fundo-background.jpg');                         /* imagem de fundo */
     background-color: #161b22;
     background-size: cover;
