@@ -8,22 +8,46 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/cyber-criminal.png">
+
+    <style>
+
+        /* @media (mim-width: 768px) {
+            .vavbar {
+                display: none;
+            }
+
+            select {
+                display: block; 
+            }
+
+        } */
+
+    </style>
+
 </head>
 
-    <header class="header">
- 
-        <!-- <img src="img/animacao-ciberseguranca.gif" alt="gif de cibersegurança" class="animacao-ciberseguranca"> -->
+<header class="header">
+    <!-- <img src="img/animacao-ciberseguranca.gif" alt="gif de cibersegurança" class="animacao-ciberseguranca"> -->
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#introducao">Início</a></li>
+          <li><a href="#ameacas-ciberneticas">Ameaças</a></li>
+          <li><a href="#ferramentas">Ferramentas</a></li>
+          <li><a href="#informacoes">informações</a></li>
+          <li><a href="html/sobre-mim.html">Sobre</a></li>
+        </ul>
+      </nav>
 
-        <nav class="navbar">
-            <ul class="nav-links">
-              <li><a href="#introducao">Início</a></li>
-              <li><a href="#ameacas-ciberneticas">Ameaças</a></li>
-              <li><a href="#ferramentas">Ferramentas</a></li>
-              <li><a href="#informacoes">informações</a></li>
-              <li><a href="html/sobre-mim.html">Sobre</a></li>
-            </ul>
-          </nav>
-    </header>
+      <select id="abanavbar" onchange="window.location.href=this.value;">
+        <option class="optionnav" value="#introducao">Início</option>
+        <option class="optionnav" value="#ameacas-ciberneticas">Ameaças</option>
+        <option class="optionnav" value="#ferramentas">Ferramentas</option>
+        <option class="optionnav" value="#informacoes">Informações</option>
+        <option class="optionnav" value="html/sobre-mim.html">Sobre</option>
+      </select>
+
+      
+</header>
 
 <body>
 
@@ -139,8 +163,8 @@
     
 </section>
 
-<section class="informacoes">
-    <h1>Porque ela é tão importante hoje em dia?</h1>
+<section class="informacoes" id="informacoes">
+    <h1 class="titulo-h1">Porque ela é tão importante hoje em dia?</h1>
     
     <div class="conteudo">
         <p> A cybersegurança é mais importante do que nunca hoje em dia porque quase tudo na nossa vida e no mundo dos negócios acontece no digital.
@@ -201,6 +225,8 @@
         <h2 class="titulo-sub">(pessoal, empresarial, governamental)</h2>
 
         <h2 class="titulo">Área Pessoal:</h2>
+
+    <!-- <div class="area-caixa-alinhada">  -->
         <div class="areas-box">
             <p>A proteção individual é a primeira linha de defesa no mundo digital. Na área pessoal,
                  a cybersegurança tem como objetivo proteger as informações privadas, como:
@@ -252,6 +278,7 @@
                  governamentais e financeiros. Com o aumento da digitalização, a segurança cibernética é essencial para preservar a confiança no ambiente online.
             </p>
         </div>
+    <!-- </div> -->
 
     </section>
 
