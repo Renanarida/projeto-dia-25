@@ -16,7 +16,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #109b1c, #081a0a);
+    background: linear-gradient(135deg, #136b1b, #081a0a);
     color: #333;
     padding: 20px;
 }
@@ -75,6 +75,10 @@ ul li::before {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+}
+
+.estudando-lista li {
+    color: aliceblue;
 }
 
 .sobre-mim-texto p {
