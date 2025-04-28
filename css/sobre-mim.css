@@ -190,7 +190,7 @@ div > h1 {
 }
 
 .container {
-    background-color: rgb(56, 55, 55);
+    background-color: rgb(88, 88, 88);
     padding: 20px;
     border-radius: 20px;
     width: 700px;
@@ -201,7 +201,7 @@ div > h1 {
 }
 
 .container p {
-    color: whitesmoke;
+    color: black;
     font-size: 1.0rem;
     font-weight: 600;
 }
