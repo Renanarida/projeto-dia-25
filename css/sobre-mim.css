@@ -46,7 +46,27 @@ ul {
 ul li::before {
     content: "✔️";
     margin-right: 8px;
+    margin: 0 20px;
     color: #3498db;
+}
+
+.estudando {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.estudando-lista {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 30px 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 
 .sobre-mim-texto p {
