@@ -524,7 +524,7 @@ header {
     padding: 1rem;
     font-family: var(--font-family);
     font-size: 18px;
-    color: var(--text-color);
+    color: var(--text-color-light);
     background: #2b4d36;
     border-radius: 10px;
     margin-bottom: 30px;

@@ -1,8 +1,17 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #00b5fd;
+    --background-color: #04571d;
+    --background-color-light: #223127;
+    --text-color: #ffffff;
+    --text-color-light: rgb(1, 131, 252);
+    --font-family: 'Arial, sans-serif';
 }
 
 body {
@@ -12,7 +21,6 @@ body {
     padding: 20px;
 }
 
-/* Seções gerais */
 section, div {
     margin-bottom: 60px;
 }
@@ -104,6 +112,7 @@ ul li::before {
     align-items: center;
     background: rgb(56, 55, 55);
     padding: 10px;
+    margin: 15px;
     width: 350px;
     height: 400px;
     border-radius: 15px;
@@ -131,9 +140,8 @@ section > div:nth-of-type(2) img {
     margin-bottom: 15px;
 }
 
-/* Botões estilosos */
 button {
-    background: linear-gradient(45deg, #3498db, #6ab0f3);
+    background: var(--secondary-color);
     color: white;
     border: none;
     padding: 10px 25px;
@@ -147,11 +155,10 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(45deg, #2980b9, #4a90e2);
+    background: var(--text-color-light);
     transform: scale(1.05);
 }
 
-/* Imagem principal */
 .imagem-perfil {
     display: block;
     margin: 40px auto;
@@ -159,11 +166,18 @@ button:hover {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border: 5px solid #3498db;
+    border: 5px solid #333333;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Textos nas outras seções */
+.imagem-perfil:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3),
+                0 0 50px rgba(0,0,0,0.2),
+                0 0 100px rgba(0,0,0,0.1);
+}
+
 div > p {
     text-align: center;
     max-width: 800px;
@@ -172,7 +186,6 @@ div > p {
     line-height: 1.8;
 }
 
-/* Para sessões como Família, Hobbies, Objetivo, etc. */
 div > h1 {
     margin-top: 20px;
     text-align: center;
@@ -211,7 +224,6 @@ div > h1 {
     transform: scale(1.05);
 }
 
-/* Deixar responsivo */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
