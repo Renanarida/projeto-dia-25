@@ -33,13 +33,13 @@ section {
 body {
     padding-top: 70px;
     background-image: url('img/sl_031420_28950_08.jpg');
-    background-color: var(--background-color-light); /* cor de fundo de fallback */
+    background-color: var(--background-color-light); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    image-rendering: 'crisp-edges'; /* ou 'crisp-edges' para imagens com linhas nítidas */
-    -webkit-font-smoothing: antialiased; /* para suavizar em navegadores WebKit */
+    image-rendering: 'crisp-edges'; 
+    -webkit-font-smoothing: antialiased; 
 }
 
 header {
@@ -59,17 +59,17 @@ header {
   }
 
 #abanavbar {
-    display: none; /* Esconde o select por padrão */
+    display: none; 
 }
 
   
   @media (max-width: 768px) {
     .navbar{
-        display: none; /* Esconde a navbar em telas menores */
+        display: none; 
     }
 
     #abanavbar {
-        display: block; /* Exibe o select em telas menores */
+        display: block; 
         width: 100px;
         height: 30px;
         padding: 5px;
